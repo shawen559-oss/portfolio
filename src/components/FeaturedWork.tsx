@@ -1,43 +1,18 @@
-import { ArrowRight } from 'lucide-react'
+import { ArrowUpRight, ArrowRight } from 'lucide-react'
 import { Container } from './Container'
 import { Reveal } from './Reveal'
 import { SectionLabel } from './SectionLabel'
-
-export function FeaturedWork() {
-  return (
-    <section id="work" className="scroll-mt-24 border-t border-line py-24 sm:py-32">
-      <Container>
-        <Reveal>
-          <SectionLabel number="02" label="Work" />
-          <h2 className="font-display text-4xl leading-[1.1] tracking-[-0.02em] sm:text-5xl">
-            Selected Work.
-          </h2>
-        </Reveal>
-
-        <Reveal delay={0.08} className="mt-14 border-t border-line pt-10">
-          <article>
-            <p className="text-[11px] font-medium tracking-[0.22em] text-muted uppercase">
-              01 / Professional Development
-            </p>
-            <h3 className="mt-5 font-display text-3xl leading-tight tracking-[-0.02em] sm:text-[42px]">
-              Understanding My Leadership Skills
-            </h3>
-            <p className="mt-4 max-w-2xl text-lg text-muted">
-              AI/ML Integration &amp; Change Management Self-Assessments
-            </p>
-            <p className="mt-8 text-[13px] tracking-[0.04em] text-muted">
-              Leadership / Artificial Intelligence / Self-Reflection
-            </p>
-            <a
-              href="#assessment"
-              className="mt-10 inline-flex items-center gap-2 text-[15px] text-ink transition-colors hover:text-accent"
-            >
-              Explore Assessment
-              <ArrowRight size={16} strokeWidth={1.5} />
-            </a>
-          </article>
-        </Reveal>
-      </Container>
-    </section>
-  )
-}
+const works = [
+ {number:'01',category:'AI / UX / Product',title:'First30 — AI Arrival Assistant',description:'An AI-powered assistant that helps international students navigate the first 30 days in the United States, from arrival checklists to SEVIS questions and contacting a DSO.',href:'#first30',cta:'Explore Case Study'},
+ {number:'02',category:'Product Development / Go-to-Market',title:'Foldie — From Concept to Launch',description:'Led the development and launch of a foldable 3-in-1 wireless charger at Woodie Milano, connecting user research, product strategy, production, and brand communication.',href:'#cv',cta:'See Experience'},
+ {number:'03',category:'Packaging / Supply Chain',title:'Movopack — Design to Delivery',description:'Packaging design and production work spanning brand experience, suppliers, manufacturing, and international logistics.',href:'#cv',cta:'See Experience'},
+ {number:'04',category:'AI Leadership / Professional Development',title:'Professional Self-Assessment',description:'AI/ML Integration Leadership and Change Management: strengths, areas to improve, and a practical development roadmap.',href:'#assessment',cta:'Explore Assessment'},
+]
+export function FeaturedWork(){return <section id="work" className="scroll-mt-24 border-t border-line py-24 sm:py-32"><Container><Reveal><SectionLabel number="02" label="Work"/><h2 className="font-display text-4xl leading-[1.1] tracking-[-0.02em] sm:text-5xl">Selected Work.</h2></Reveal>
+ <div className="mt-14">{works.map((work,index)=><Reveal key={work.number} delay={index*.04}><article className="grid gap-5 border-t border-line py-10 md:grid-cols-[90px_1fr] md:gap-8"><span className="text-[12px] tracking-[0.16em] text-accent">{work.number}</span><div><p className="text-[11px] font-medium tracking-[0.2em] text-muted uppercase">{work.category}</p><h3 className="mt-4 font-display text-3xl leading-tight sm:text-[42px]">{work.title}</h3><p className="mt-4 max-w-2xl text-[16px] leading-relaxed text-muted">{work.description}</p>{index===0&&<a href="#first30" className="mt-7 block max-w-3xl overflow-hidden rounded-xl border border-line" aria-label="Explore First30 case study"><img src={`${import.meta.env.BASE_URL}images/first30-interface.png`} alt="First30 arrival checklist, SEVIS check-in, deadlines, DSO contact, and AI chat interface" className="block h-auto w-full" loading="lazy" /></a>}<a href={work.href} className="mt-6 inline-flex items-center gap-2 text-[14px] hover:text-accent">{work.cta} <ArrowRight size={16}/></a></div></article></Reveal>)}</div>
+ </Container></section>}
+export function First30CaseStudy(){return <section id="first30" className="scroll-mt-24 border-t border-line py-24 sm:py-32"><Container><Reveal><p className="text-[11px] tracking-[.22em] text-accent uppercase">Featured Case Study / AI Product</p><h2 className="mt-6 font-display text-4xl sm:text-5xl">First30.</h2><p className="mt-5 max-w-2xl text-[17px] text-muted">A conversational arrival assistant for international students navigating their first month in the U.S.</p><figure className="mt-10 overflow-hidden rounded-xl border border-line"><img src={`${import.meta.env.BASE_URL}images/first30-interface.png`} alt="Screenshot of the First30 assistant showing four arrival support tools and the chat interface" className="block h-auto w-full" loading="lazy" /><figcaption className="px-4 py-3 text-[12px] text-muted">First30 — live product interface</figcaption></figure><div className="mt-12 grid gap-8 md:grid-cols-3">{[
+ ['The problem','Arrival tasks, SEVIS procedures, and university deadlines can be confusing. Guidance is often scattered across different sources.'],
+ ['The approach','A focused conversational experience built around clear language, practical next steps, and reminders to verify requirements with official sources and a DSO.'],
+ ['What it covers','First-30-day checklists, SEVIS check-in guidance, important deadlines, and help drafting messages to a DSO.']
+ ].map(([heading,body])=><div key={heading} className="border-t border-line pt-5"><h3 className="text-lg font-medium">{heading}</h3><p className="mt-3 text-[15px] leading-relaxed text-muted">{body}</p></div>)}</div><a className="mt-12 inline-flex items-center gap-2 border-b border-ink pb-2 hover:text-accent" href="https://first30.shawen559.workers.dev/" target="_blank" rel="noopener noreferrer">Visit live project <ArrowUpRight size={17}/></a></Reveal></Container></section>}

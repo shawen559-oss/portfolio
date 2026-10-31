@@ -3,7 +3,8 @@ import { AimlAssessment } from './components/AimlAssessment'
 import { AssessmentIntro } from './components/AssessmentIntro'
 import { ChangeAssessment } from './components/ChangeAssessment'
 import { Closing } from './components/Closing'
-import { FeaturedWork } from './components/FeaturedWork'
+import { FeaturedWork, First30CaseStudy } from './components/FeaturedWork'
+import { CV } from './components/CV'
 import { Footer } from './components/Footer'
 import { Hero } from './components/Hero'
 import { Nav } from './components/Nav'
@@ -23,10 +24,12 @@ export default function App() {
         <Hero />
         <About />
         <FeaturedWork />
+        <First30CaseStudy />
         <AssessmentIntro />
         <AimlAssessment />
         <ChangeAssessment />
         <Roadmap />
+        <CV />
         <Closing />
       </main>
       <Footer />

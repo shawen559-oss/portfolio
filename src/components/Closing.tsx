@@ -1,3 +1,4 @@
+import { ArrowUpRight } from 'lucide-react'
 import { Container } from './Container'
 import { Reveal } from './Reveal'
-export function Closing(){return <section className="border-t border-line py-24 sm:py-32"><Container><Reveal><blockquote className="max-w-4xl font-display text-4xl leading-[1.15] tracking-[-0.02em] text-ink sm:text-5xl lg:text-[56px]">“I’m interested in what happens when design, business, and technology come together.”</blockquote><p className="mt-10 max-w-2xl text-[17px] leading-relaxed text-muted">I’m always open to thoughtful collaborations and new challenges.</p></Reveal></Container></section>}
+export function Closing(){return <section className="border-t border-line py-24 sm:py-32"><Container><Reveal><p className="editorial-kicker mb-10 text-accent">Open to what's next</p><h2 className="editorial-display max-w-5xl text-[clamp(4rem,10vw,10rem)]">Good things start with <em className="font-normal text-accent">a conversation.</em></h2><a href="mailto:shawen559@gmail.com" className="editorial-link mt-12 text-[17px]">Let's make something meaningful <ArrowUpRight size={21}/></a></Reveal></Container></section>}

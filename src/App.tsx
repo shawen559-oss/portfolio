@@ -1,4 +1,5 @@
 import { About } from './components/About'
+import { AiReliabilityArtifact } from './components/AiReliabilityArtifact'
 import { AimlAssessment } from './components/AimlAssessment'
 import { AssessmentIntro } from './components/AssessmentIntro'
 import { ChangeAssessment } from './components/ChangeAssessment'
@@ -25,6 +26,7 @@ export default function App() {
         <About />
         <FeaturedWork />
         <First30CaseStudy />
+        <AiReliabilityArtifact />
         <AssessmentIntro />
         <AimlAssessment />
         <ChangeAssessment />

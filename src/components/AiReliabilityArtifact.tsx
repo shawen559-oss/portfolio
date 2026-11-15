@@ -1,4 +1,3 @@
-import { ArrowUpRight } from 'lucide-react'
 import { Container } from './Container'
 import { Reveal } from './Reveal'
 
@@ -60,15 +59,6 @@ export function AiReliabilityArtifact() {
               process, tools, and practical value so that readers can see both the work and
               what I learned from it.
             </p>
-            <a
-              href="https://chatgpt.com/share/6af8e424-2c14-83ea-a330-dbc76755e89a"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="mt-9 inline-flex items-center gap-2 border-b border-ink pb-2 text-[14px] hover:text-accent"
-            >
-              View original ChatGPT exercise <ArrowUpRight size={17} />
-            </a>
-            <p className="mt-3 text-[12px] text-muted">Evidence: shared conversation from the AIML500 exercise.</p>
           </div>
         </Reveal>
       </Container>

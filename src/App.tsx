@@ -1,5 +1,6 @@
 import { About } from './components/About'
 import { AiReliabilityArtifact } from './components/AiReliabilityArtifact'
+import { DataChallengeArtifact } from './components/DataChallengeArtifact'
 import { AimlAssessment } from './components/AimlAssessment'
 import { AssessmentIntro } from './components/AssessmentIntro'
 import { ChangeAssessment } from './components/ChangeAssessment'
@@ -27,6 +28,7 @@ export default function App() {
         <FeaturedWork />
         <First30CaseStudy />
         <AiReliabilityArtifact />
+        <DataChallengeArtifact />
         <AssessmentIntro />
         <AimlAssessment />
         <ChangeAssessment />

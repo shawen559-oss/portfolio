@@ -32,10 +32,10 @@ export function DataChallengeArtifact() {
         <Reveal>
           <p className="text-[11px] tracking-[.22em] text-accent uppercase">Portfolio Artifact 04 / AIML500</p>
           <h2 className="mt-6 max-w-4xl font-display text-4xl leading-tight sm:text-5xl">
-            Data Challenge Scenarios.
+            Why Chat with a Bot?
           </h2>
           <p className="mt-5 max-w-3xl text-[17px] leading-relaxed text-muted">
-            Three practice scenarios about data quality, fairness, and privacy in machine learning.
+            Data Challenge Scenarios: AI-Guided Decision Making. Three practice scenarios about data quality, fairness, and privacy in machine learning.
             I used each scenario to question my first decision and think about what should be tested before a model is trusted.
           </p>
           <p className="mt-4 text-[12px] tracking-[.08em] text-muted">

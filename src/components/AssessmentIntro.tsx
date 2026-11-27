@@ -26,9 +26,9 @@ export function AssessmentIntro() {
       <Container>
         <Reveal>
           <SectionLabel number="04" label="Work / Professional Self-Assessment" />
-          <p className="mb-5 text-[12px] tracking-[.12em] text-muted">DTAN500 · Workshop 1 · Professional Assessment</p>
+          <p className="mb-5 text-[12px] tracking-[.12em] text-muted">Portfolio Artifacts 01 & 02 · DTAN500 · Workshop 1</p>
           <h2 className="max-w-3xl font-display text-4xl leading-[1.1] tracking-[-0.02em] sm:text-5xl">
-            Where I stand.
+            Professional Self-Assessment.
             <br />
             Where I want to grow.
           </h2>

@@ -2,6 +2,8 @@ import { Container } from './Container'
 import { Reveal } from './Reveal'
 
 const details = [
+  { heading: 'Introduction', body: 'AI can produce fluent answers even when its information is incomplete or wrong.' },
+  { heading: 'Description', body: 'A guided classroom exercise comparing suitable and unsuitable uses of generative AI.' },
   {
     heading: 'Objective',
     body: 'Understand when AI is useful, when it can be unreliable, and how to evaluate an answer before trusting it.',
@@ -11,13 +13,16 @@ const details = [
     body: 'I tested ChatGPT with different tasks, including fictional information, multiplication, current stock prices, recent research, private conversations, and creative writing. I compared how convincing each answer sounded with how much I could actually verify.',
   },
   {
-    heading: 'Tools',
+    heading: 'Tools and Technology',
     body: 'ChatGPT, critical thinking, task comparison, and independent verification methods such as calculators and up-to-date sources.',
   },
   {
-    heading: 'Value Proposition',
+    heading: 'Value Proposition of the Artifact',
     body: 'Knowing when to question AI helps me choose the right tool, avoid unsupported claims, and make more careful decisions in product design and data analytics.',
   },
+  { heading: 'Unique Value', body: 'I examined my own judgments rather than treating the chatbot as an answer key.' },
+  { heading: 'Relevance', body: 'Analysts and product teams need to verify facts, calculations, and current information before acting on AI output.' },
+  { heading: 'References', body: 'Indiana Wesleyan University. (2026). AIML500 guided AI reliability exercise [Course activity]. OpenAI. (2026). ChatGPT [Large language model]. https://chatgpt.com/' },
 ]
 
 export function AiReliabilityArtifact() {

@@ -45,10 +45,15 @@ export function DataChallengeArtifact() {
 
         <div className="mt-14 grid gap-8 md:grid-cols-2">
           {[
+            ['Introduction', 'Machine learning decisions depend on the quality of data and the people affected by the model.'],
+            ['Description', 'A guided chatbot exercise covering customer reviews, hiring fairness, and hospital data privacy.'],
             ['Objective', 'Practice making responsible decisions about machine learning data, model bias, and patient privacy.'],
             ['Process', 'Respond to three AI-generated scenarios, explain my decisions, reconsider them after follow-up questions, and identify what still needs testing.'],
-            ['Tools and Methods', 'AI-guided scenario practice, critical thinking, comparison testing, data quality review, fairness checks, and privacy risk assessment.'],
-            ['Practical Value', 'These lessons apply to product design and data analytics, where data choices affect people and model results need to be checked.'],
+            ['Tools and Technology', 'ChatGPT, AI-guided scenario practice, critical thinking, comparison testing, data quality review, fairness checks, and privacy risk assessment.'],
+            ['Value Proposition of the Artifact', 'These lessons apply to product design and data analytics, where data choices affect people and model results need to be checked.'],
+            ['Unique Value', 'The exercise records how I revised my initial decisions after considering risks and alternatives.'],
+            ['Relevance', 'Data analysts and AI product teams need to consider data quality, fairness, and privacy before deployment.'],
+            ['References', 'Indiana Wesleyan University. (2026). Why chat with a bot? Data Challenge Scenarios Coach [Course activity]. OpenAI. (2026). ChatGPT [Large language model]. https://chatgpt.com/'],
           ].map(([heading, body]) => (
             <Reveal key={heading}>
               <div className="h-full border-t border-line pt-6">
